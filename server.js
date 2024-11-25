@@ -9,7 +9,7 @@ const app = express();
 
 // CORS sozlamalarini aniqlash
 app.use(cors({
-  origin: "http://localhost:5173",  // Barcha domenlardan kelgan so'rovlarga ruxsat berish
+  origin: "*",  // Barcha domenlardan kelgan so'rovlarga ruxsat berish
   methods: ["GET", "POST", "PUT", "DELETE"],  // Ruxsat berilgan metodlar
   allowedHeaders: ["Content-Type", "Authorization"]  // Ruxsat berilgan header'lar
 }));
